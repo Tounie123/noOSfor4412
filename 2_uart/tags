@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFFER_SIZE	mk4412.c	11;"	d	file:
+BUILD	Makefile	/^BUILD  := uart$/;"	m
+CC	Makefile	/^CC	:= $(CROSS_COMPILE)gcc$/;"	m
+CLK_DIV_PERIL0	uart.h	43;"	d
+CLK_SRC_DMC	uart.h	39;"	d
+CLK_SRC_PERIL0	uart.h	44;"	d
+CLK_SRC_TOP1	uart.h	41;"	d
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE := arm-unknown-linux-gnueabi-$/;"	m
+ENV_	Makefile	/^ENV_ 	?= SD#?=如果不指定 则按默认方式  $/;"	m
+GPA1CON	uart.h	27;"	d
+GPADAT	uart.h	28;"	d
+GPK1CON	led.h	11;"	d
+GPK1DAT	led.h	12;"	d
+GPL2CON	led.h	9;"	d
+GPL2DAT	led.h	10;"	d
+HEADER_SIZE	mk4412.c	12;"	d	file:
+LD	Makefile	/^LD	:= $(CROSS_COMPILE)ld#链接器$/;"	m
+MPLL_CON0	uart.h	40;"	d
+OBJCOPY	Makefile	/^OBJCOPY	:= $(CROSS_COMPILE)objcopy#文件格式的转换工具  $/;"	m
+SDTOOLS	Makefile	/^SDTOOLS := .\/mk4412 $/;"	m
+TARGET	Makefile	/^TARGET := uart.bin$/;"	m
+UART1_BASE	uart.h	30;"	d
+UART1_DIV	uart.h	33;"	d
+UART1_UCON	uart.h	32;"	d
+UART1_UFRACVAL	uart.h	34;"	d
+UART1_ULCON	uart.h	31;"	d
+URXH	uart.h	36;"	d
+UTRSTAT	uart.h	37;"	d
+UTXH	uart.h	35;"	d
+__LED_H	led.h	8;"	d
+__UART_H	uart.h	2;"	d
+_start	start.S	/^_start:$/;"	l
+br_rest	uart.h	/^union br_rest {$/;"	u
+clock	uart.c	/^void clock(void)$/;"	f
+desplay	led.c	/^void desplay(void)$/;"	f
+f	Makefile	/^	dd if=.\/$(TARGET) of=\/dev\/sdb bs=512 seek=1 iflag=dsync oflag=dsync$/;"	m
+led	led.c	/^void led(void)$/;"	f
+main	main.c	/^int main(int argc,char *argv[])$/;"	f
+main	mk4412.c	/^int main(int argc, char *argv[])$/;"	f
+myput	uart.c	/^void myput(char c)$/;"	f
+mystring	uart.c	/^void mystring(char *str)$/;"	f
+res1	uart.h	/^	unsigned char res1[3];$/;"	m	struct:s5p_uart
+res2	uart.h	/^	unsigned char res2[3];$/;"	m	struct:s5p_uart
+res3	uart.h	/^	unsigned char res3[0xffd0];$/;"	m	struct:s5p_uart
+rest	uart.h	/^	union br_rest rest; $/;"	m	struct:s5p_uart	typeref:union:s5p_uart::br_rest
+s5p_uart	uart.h	/^struct s5p_uart {$/;"	s
+slot	uart.h	/^	unsigned short	slot;		\/* udivslot *\/$/;"	m	union:br_rest
+uart	uart.c	/^void uart(void)$/;"	f
+ubrdiv	uart.h	/^	unsigned int ubrdiv;$/;"	m	struct:s5p_uart
+ucon	uart.h	/^	unsigned int ucon;$/;"	m	struct:s5p_uart
+uerstat	uart.h	/^	unsigned int uerstat;$/;"	m	struct:s5p_uart
+ufcon	uart.h	/^	unsigned int ufcon;$/;"	m	struct:s5p_uart
+ufstat	uart.h	/^	unsigned int ufstat;$/;"	m	struct:s5p_uart
+ulcon	uart.h	/^	unsigned int ulcon;$/;"	m	struct:s5p_uart
+umcon	uart.h	/^	unsigned int umcon;$/;"	m	struct:s5p_uart
+umstat	uart.h	/^	unsigned int umstat;$/;"	m	struct:s5p_uart
+urxh	uart.h	/^	unsigned char urxh;$/;"	m	struct:s5p_uart
+utrstat	uart.h	/^	unsigned int utrstat;$/;"	m	struct:s5p_uart
+utxh	uart.h	/^	unsigned char utxh;$/;"	m	struct:s5p_uart
+value	uart.h	/^	unsigned char	value;		\/* ufracval *\/$/;"	m	union:br_rest
